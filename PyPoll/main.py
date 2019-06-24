@@ -1,5 +1,6 @@
 import csv
 import sys
+sys.stdout = open("Solutions_Pypoll.txt", "w")
 
 with open('election_data.csv', newline= '') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
@@ -32,4 +33,4 @@ with open('election_data.csv', newline= '') as csv_file:
     print(f'Winner: {(most_frequent(Candidate))}')
     print('-------------------')
 
-    sys.stdout = open("Solutions_Pypoll.txt", "w")
+    

@@ -1,7 +1,7 @@
 import csv
 import os
 import sys
-
+sys.stdout = open("Solutions_PyBank.txt", "w")
 
 
 with open('budget_data.csv', newline= '') as csv_file:
@@ -41,4 +41,3 @@ with open('budget_data.csv', newline= '') as csv_file:
     print(f'Greatest Decrease in Profits:{date_min} {min_monthly}')
 
 
-sys.stdout = open("Solutions_PyBank.txt", "w")
